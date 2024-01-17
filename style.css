@@ -32,13 +32,13 @@ body {
     align-items: center;
     gap: 25px;
 
-    position: absolute;
-    top: 50px;
+    position: relative;
+    top: 3rem;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: #393058;
-    height: 75px;
-    width: 600px;
+    height: 5rem;
+    width: 33rem;
     border-radius: 20px;
 }
 
@@ -46,49 +46,61 @@ body {
     display: flex;
     text-align: center;
     flex-direction: column;
-    position: absolute;
-    top: 200px;
+    position: relative;
+    top: 7rem;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: #393058;
     height: auto;
-    width: auto;
+    width: 40rem;
 
     border-radius: 20px;
+
+    transition: background-color 100ms linear;
 }
 
 #desc_content {
     display: flex;
     text-align: center;
     flex-direction: column;
-    position: absolute;
-    top: 300px;
+    position: relative;
+    top: 9rem;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: #393058;
-    width: auto;
     height: auto;
+    width: 50rem;
 
     border-radius: 20px;
+
+    transition: background-color 100ms linear;
 }
 
 #invite_content {
     display: flex;
     text-align: center;
     flex-direction: column;
-    position: absolute;
-    top: 600px;
+    position: relative;
+    top: 13rem;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: #393058;
-    width: auto;
     height: auto;
+    width: 20rem;
 
     border-radius: 20px;
+
+    transition: background-color 100ms linear;
 }
 
 #invite_link {
     margin: 30px;
+}
+
+#github {
+    position: fixed;
+    bottom: 0;
+    right: 0
 }
 
 #caption, #title, #title_features {
@@ -135,6 +147,13 @@ body {
     cursor: pointer;
 }
 
+#github {
+    font-family: 'Roboto';
+    color: #605196;
+
+    font-size: 15px;
+}
+
 #commands:hover, #changelog:hover, #home:hover, #invite_link:hover {
     color:#8972e4
 }
@@ -142,4 +161,8 @@ body {
 a, a:hover, a:visited, a:active {
     color: inherit;
     text-decoration: none;
+}
+
+#first_content:hover, #desc_content:hover {
+    background-color: #473c6b
 }
