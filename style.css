@@ -3,56 +3,121 @@ body {
     background-color: #26203d;
 }
 
+#main {
+    opacity: 1
+}
+
+#bg_img:after {
+    position: absolute;
+    content:'';
+    z-index:-1;
+    background-image: url("imgs/seele-white.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position-y: 50%;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    opacity: 0.02;
+}
+
 #header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
 
     position: absolute;
     top: 50px;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: #2e2747;
+    background-color: #393058;
     height: 75px;
-    width: 500px;
+    width: 600px;
     border-radius: 20px;
 }
 
 #first_content {
     display: flex;
+    text-align: center;
     flex-direction: column;
     position: absolute;
     top: 200px;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: #393058;
-    height: 50%;
-    width: 80%;
+    height: auto;
+    width: auto;
 
     border-radius: 20px;
 }
 
-#caption, #title {
-    font-family: 'Roboto';
+#desc_content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #393058;
+    width: auto;
+    height: auto;
 
-    margin-left: 20px;
-    color: white;
-    font-weight: bold;
+    border-radius: 20px;
 }
 
-#title {
+#invite_content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #393058;
+    width: auto;
+    height: auto;
+
+    border-radius: 20px;
+}
+
+#invite_link {
+    margin: 30px;
+}
+
+#caption, #title, #title_features {
+    font-family: 'Roboto';
+
+    margin-left: 60px;
+    margin-right: 60px;
+    color: white;
+    font-weight: bold;   
+}
+
+.last {
+    margin-bottom: 40px;
+}
+
+#title, #title_features {
     margin: 20px;
     font-size: 28px;
 }
 
-#caption {
-    font-size: 20px;
+#title_features {
+    text-decoration: underline;
 }
 
-#commands, #changelog, #separator_1 {
+#caption {
+    font-size: 25px;
+}
+
+#commands, #changelog, #separator_1, #home {
     font-family: 'Roboto';
 
     color: white;
@@ -70,7 +135,7 @@ body {
     cursor: pointer;
 }
 
-#commands:hover, #changelog:hover, #invite_link:hover {
+#commands:hover, #changelog:hover, #home:hover, #invite_link:hover {
     color:#8972e4
 }
 
